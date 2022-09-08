@@ -11,15 +11,17 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="200px"
-        android:layout_marginTop="20dp"
         android:layout_marginHorizontal="30dp"
+        android:background="@drawable/rounded_file"
+        android:gravity="center"
         android:text="Career Adviser"
         android:textAlignment="center"
-        android:gravity="center"
-        android:textSize="26dp"
         android:textColor="#F2E2BA"
-        android:background="@drawable/rounded_file"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        tools:layout_editor_absoluteX="25dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

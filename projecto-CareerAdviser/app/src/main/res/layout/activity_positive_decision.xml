@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".LearningRoute.PositiveDecisionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="Agrupe decisiones que consideres vitales en tu trayectoria"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:padding="25dp"
+            android:background="@drawable/rounded_file"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_file"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/modified_rounded_file"
+                android:textColor="#FFEB3B"
+                android:text="Ayude a la comunidad a encontrar la clave del éxito"
+                android:textSize="16dp"
+                android:padding="20dp"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_base"
+                android:padding="5dp"
+                android:hint="Escribe algo...\n"
+                android:textSize="12dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginHorizontal="25dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_base"
+                android:padding="5dp"
+                android:hint="Escribe algo...\n"
+                android:textSize="12dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginHorizontal="25dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_base"
+                android:padding="5dp"
+                android:hint="Escribe algo...\n"
+                android:textSize="12dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginHorizontal="25dp"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Limpiar"/>
+
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seguir"
+                    android:backgroundTint="#009688"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

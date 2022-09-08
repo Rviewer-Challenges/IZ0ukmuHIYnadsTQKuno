@@ -14,7 +14,10 @@
         android:theme="@style/Theme.CareerAdviser"
         tools:targetApi="31">
         <activity
-            android:name=".addCareer"
+            android:name=".PositiveDecisionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddCareer"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

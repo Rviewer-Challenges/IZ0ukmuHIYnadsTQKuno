@@ -2,6 +2,7 @@ package com.careeradviser;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -9,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class addCareer extends AppCompatActivity {
+public class AddCareer extends AppCompatActivity {
 
     FloatingActionButton backBtn, addBtn;
     EditText jobTitle, studyYearsEt, workYearsEt;
@@ -27,14 +28,23 @@ public class addCareer extends AppCompatActivity {
                 String titulo = jobTitle.getText().toString();
                 int studyYears = 0;
                 int workYears = 0;
-                if (!studyYearsEt.getText().toString().equals("") || studyYearsEt.getText().toString().equals("0")){
+                if (!studyYearsEt.getText().toString().isEmpty() || studyYearsEt.getText().toString().equals("0")){
                     studyYears = Integer.parseInt(studyYearsEt.getText().toString());
                 }
-                if (!workYearsEt.getText().toString().equals("") || workYearsEt.getText().toString().equals("0")){
+                if (!workYearsEt.getText().toString().isEmpty() || workYearsEt.getText().toString().equals("0")){
                     workYears = Integer.parseInt(workYearsEt.getText().toString());
                 }
 
                 //Cambiar de pantalla
+                Toast.makeText(this, "Nos llevará a la pantalla para dejar las decisiones", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Intent iMainActivity = new Intent(this, MainActivity.class);
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(iMainActivity);
             }
         });
     }
