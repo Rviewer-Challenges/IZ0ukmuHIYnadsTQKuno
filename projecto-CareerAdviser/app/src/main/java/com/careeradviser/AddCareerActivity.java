@@ -8,11 +8,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.careeradviser.Auxiliar.Generics;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class AddCareerActivity extends AppCompatActivity {
 
-    public static final String NOMBRE_EMPLEO_EXCEPCION = "El nombre del empleo no puede ser nulo";
+
     FloatingActionButton backBtn, addBtn;
     EditText jobTitle, studyYearsEt, workYearsEt;
 
@@ -24,7 +25,7 @@ public class AddCareerActivity extends AppCompatActivity {
         setData();
         addBtn.setOnClickListener(view -> {
             if (jobTitle.getText().toString().isEmpty()){
-                Toast.makeText(getApplicationContext(), NOMBRE_EMPLEO_EXCEPCION, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), Generics.NOMBRE_EMPLEO_EXCEPCION, Toast.LENGTH_SHORT).show();
             }else{
                 String titulo = jobTitle.getText().toString();
                 int studyYears = 0;
@@ -35,9 +36,12 @@ public class AddCareerActivity extends AppCompatActivity {
                 if (!workYearsEt.getText().toString().isEmpty() || workYearsEt.getText().toString().equals("0")){
                     workYears = Integer.parseInt(workYearsEt.getText().toString());
                 }
-
-                //Cambiar de pantalla
-                Toast.makeText(this, "Nos llevará a la pantalla para dejar las decisiones", Toast.LENGTH_SHORT).show();
+                if (workYears<0 || studyYears<0){
+                    Toast.makeText(this, Generics.WRONG_INPUT_MESSAGE, Toast.LENGTH_SHORT).show();
+                }else{
+                    //Cambiar de pantalla
+                    Toast.makeText(this, Generics.ADD_CAREER_MESSAGE, Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
