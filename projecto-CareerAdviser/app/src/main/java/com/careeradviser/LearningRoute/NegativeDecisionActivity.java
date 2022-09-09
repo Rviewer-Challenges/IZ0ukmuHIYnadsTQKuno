@@ -1,8 +1,10 @@
 package com.careeradviser.LearningRoute;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+import static com.careeradviser.Auxiliar.Generics.clearET;
+import static com.careeradviser.Auxiliar.Generics.isEmpty;
+import static com.careeradviser.Auxiliar.Generics.parseString;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -16,8 +18,6 @@ import com.careeradviser.Auxiliar.Generics;
 import com.careeradviser.MainActivity;
 import com.careeradviser.R;
 
-import java.util.ArrayList;
-
 public class NegativeDecisionActivity extends AppCompatActivity {
 
     EditText etNegativeDecision1, etNegativeDecision2, etNegativeDecision3;
@@ -28,7 +28,7 @@ public class NegativeDecisionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_negative_decision);
 
-        prepareData();
+        setData();
         bClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -95,20 +95,7 @@ public class NegativeDecisionActivity extends AppCompatActivity {
             && isEmpty(parseString(etNegativeDecision3));
     }
 
-    @NonNull
-    private String parseString(EditText etNegativeDecision2) {
-        return etNegativeDecision2.getText().toString();
-    }
-
-    private boolean isEmpty(String negativeDecision3) {
-        return negativeDecision3.trim().isEmpty();
-    }
-
-    private void clearET(EditText etNegativeDecision3) {
-        etNegativeDecision3.getText().clear();
-    }
-
-    private void prepareData() {
+    private void setData() {
         etNegativeDecision1 = findViewById(R.id.etNegativeTip1);
         etNegativeDecision2 = findViewById(R.id.etNegativeTip2);
         etNegativeDecision3 = findViewById(R.id.etNegativeTip3);

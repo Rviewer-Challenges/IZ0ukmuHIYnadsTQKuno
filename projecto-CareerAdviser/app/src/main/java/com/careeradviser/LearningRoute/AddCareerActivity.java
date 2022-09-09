@@ -1,4 +1,8 @@
-package com.careeradviser;
+package com.careeradviser.LearningRoute;
+
+import static com.careeradviser.Auxiliar.Generics.ID_LEARNING_ROUTE;
+import static com.careeradviser.Auxiliar.Generics.isEmpty;
+import static com.careeradviser.Auxiliar.Generics.parseString;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +13,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.careeradviser.Auxiliar.Generics;
+import com.careeradviser.MainActivity;
+import com.careeradviser.Model.LearningRoute;
+import com.careeradviser.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class AddCareerActivity extends AppCompatActivity {
@@ -16,6 +23,7 @@ public class AddCareerActivity extends AppCompatActivity {
 
     FloatingActionButton backBtn, addBtn;
     EditText jobTitle, studyYearsEt, workYearsEt;
+    LearningRoute lRoute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,23 +32,26 @@ public class AddCareerActivity extends AppCompatActivity {
 
         setData();
         addBtn.setOnClickListener(view -> {
-            if (jobTitle.getText().toString().isEmpty()){
+            if (isEmpty(parseString(jobTitle))){
                 Toast.makeText(getApplicationContext(), Generics.JOB_TITLE_EXCEPTION, Toast.LENGTH_SHORT).show();
             }else{
-                String titulo = jobTitle.getText().toString();
-                int studyYears = 0;
-                int workYears = 0;
-                if (!studyYearsEt.getText().toString().isEmpty() || studyYearsEt.getText().toString().equals("0")){
-                    studyYears = Integer.parseInt(studyYearsEt.getText().toString());
+                String job = parseString(jobTitle);
+                int studyingYears = 0;
+                int workingYears = 0;
+                if (!isEmpty(parseString(workYearsEt)) || parseString(studyYearsEt).equals("0")){
+                    studyingYears = Integer.parseInt(parseString(studyYearsEt));
                 }
-                if (!workYearsEt.getText().toString().isEmpty() || workYearsEt.getText().toString().equals("0")){
-                    workYears = Integer.parseInt(workYearsEt.getText().toString());
+                if (!isEmpty(parseString(studyYearsEt)) || parseString(workYearsEt).equals("0")){
+                    workingYears = Integer.parseInt(parseString(workYearsEt));
                 }
-                if (workYears<0 || studyYears<0){
+                if (workingYears<0 || studyingYears<0){
                     Toast.makeText(this, Generics.WRONG_INPUT_MESSAGE, Toast.LENGTH_SHORT).show();
                 }else{
                     //Cambiar de pantalla
-                    Toast.makeText(this, Generics.ADD_CAREER_MESSAGE, Toast.LENGTH_SHORT).show();
+                    lRoute = createLearningRoute(job, studyingYears, workingYears);
+                    Intent iLearningRouteActivity = new Intent(this, LearningRouteActivity.class);
+                    iLearningRouteActivity.putExtra(ID_LEARNING_ROUTE, lRoute);
+                    startActivity(iLearningRouteActivity);
                 }
             }
         });
@@ -52,6 +63,10 @@ public class AddCareerActivity extends AppCompatActivity {
                 startActivity(iMainActivity);
             }
         });
+    }
+
+    private LearningRoute createLearningRoute(String job, int studyingYears, int workingYears) {
+        return new LearningRoute(job, studyingYears, workingYears);
     }
 
     private void setData() {

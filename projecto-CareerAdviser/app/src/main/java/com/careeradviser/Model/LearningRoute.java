@@ -1,8 +1,9 @@
 package com.careeradviser.Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class LearningRoute {
+public class LearningRoute implements Serializable {
     private String job;
     private int studyingYears, workingYears;
     private ArrayList<String> positiveDecision;

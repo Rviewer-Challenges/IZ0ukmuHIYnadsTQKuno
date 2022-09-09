@@ -1,7 +1,14 @@
 package com.careeradviser.Auxiliar;
 
+import android.widget.EditText;
+
+import androidx.annotation.NonNull;
+
 public class Generics {
     //CONSTANTES
+
+    //AddCareerActivity
+    public static final String ID_LEARNING_ROUTE = "LearningRoute";
 
     //NegativeDecisionActivity
     public static final String CLEAR_MESSAGE = "Podemos aportar más valor del que creemos a la comunidad";
@@ -19,4 +26,17 @@ public class Generics {
     public static final String WRONG_INPUT_MESSAGE = "Introduzca valores válidos para los años de experiencia";
     public static final String ADD_CAREER_MESSAGE = "Nos llevará a la pantalla para dejar las decisiones";
     public static final String JOB_TITLE_EXCEPTION = "El nombre del empleo no puede ser nulo";
+
+    @NonNull
+    public static String parseString(EditText et) {
+        return et.getText().toString();
+    }
+
+    public static boolean isEmpty(String s) {
+        return s.trim().isEmpty();
+    }
+
+    public static void clearET(EditText et) {
+        et.getText().clear();
+    }
 }
