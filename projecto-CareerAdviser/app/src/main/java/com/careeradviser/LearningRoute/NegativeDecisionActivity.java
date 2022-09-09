@@ -32,18 +32,21 @@ public class NegativeDecisionActivity extends AppCompatActivity {
         bClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(NegativeDecisionActivity.this, Generics.CLEAR_MESSAGE, Toast.LENGTH_SHORT).show();
-                //Comprobar de mayor a menor e ir limpiando in et con cada uso del botón
+
+                //Comprobar de mayor a menor e ir limpiando un et con cada uso del botón
                 String negativeDecision2 = parseString(etNegativeDecision2);
                 String negativeDecision3 = parseString(etNegativeDecision3);
                 if (isEmpty(negativeDecision3)){
                     if (isEmpty(negativeDecision2)){
                         clearET(etNegativeDecision1);
+                        Toast.makeText(NegativeDecisionActivity.this, Generics.CLEAR_MESSAGE, Toast.LENGTH_SHORT).show();
                     }else{
                         clearET(etNegativeDecision2);
+
                     }
                 }else{
                     clearET(etNegativeDecision3);
+                    Toast.makeText(NegativeDecisionActivity.this, Generics.CLEAR_MESSAGE2, Toast.LENGTH_SHORT).show();
                 }
             }
         });
