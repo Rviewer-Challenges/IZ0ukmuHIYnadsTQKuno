@@ -12,6 +12,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class AddCareer extends AppCompatActivity {
 
+    public static final String NOMBRE_EMPLEO_EXCEPCION = "El nombre del empleo no puede ser nulo";
     FloatingActionButton backBtn, addBtn;
     EditText jobTitle, studyYearsEt, workYearsEt;
 
@@ -23,7 +24,7 @@ public class AddCareer extends AppCompatActivity {
         setData();
         addBtn.setOnClickListener(view -> {
             if (jobTitle.getText().toString().isEmpty()){
-                Toast.makeText(getApplicationContext(), "El nombre del empleo no puede ser nulo", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), NOMBRE_EMPLEO_EXCEPCION, Toast.LENGTH_SHORT).show();
             }else{
                 String titulo = jobTitle.getText().toString();
                 int studyYears = 0;
