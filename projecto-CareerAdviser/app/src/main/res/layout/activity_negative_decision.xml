@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_200"
-    tools:context=".LearningRoute.PositiveDecisionActivity">
+    tools:context=".LearningRoute.NegativeDecisionActivity">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,10 +19,10 @@
             android:layout_marginHorizontal="50dp"
             android:layout_marginTop="25dp"
             android:gravity="center"
-            android:text="Agrupe decisiones que consideres vitales en tu trayectoria"
+            android:text="Cite varios consejos desaconsejables a lo largo de su carrera"
             android:textColor="@color/white"
             android:textSize="16dp"
-            android:padding="25dp"
+            android:padding="20dp"
             android:background="@drawable/rounded_file"/>
 
         <LinearLayout
@@ -37,13 +38,13 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/modified_rounded_file"
                 android:textColor="#FFEB3B"
-                android:text="Ayude a la comunidad a encontrar la clave del éxito"
+                android:text="Recuerde que todos aprendemos a la vez, la comunidad se lo agradece"
                 android:textSize="16dp"
                 android:padding="20dp"
                 android:gravity="center"/>
 
             <EditText
-                android:id="@+id/etPositiveTip1"
+                android:id="@+id/etNegativeTip1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="25dp"
@@ -56,7 +57,7 @@
                 android:textSize="12dp" />
 
             <EditText
-                android:id="@+id/etPositiveTip2"
+                android:id="@+id/etNegativeTip2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/input_base"
@@ -69,7 +70,7 @@
                 android:layout_marginHorizontal="25dp"/>
 
             <EditText
-                android:id="@+id/etPositiveTip3"
+                android:id="@+id/etNegativeTip3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="25dp"
@@ -93,7 +94,7 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/positive_clear_button"
+                    android:id="@+id/negative_clear_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Limpiar"/>
@@ -103,7 +104,7 @@
                     android:layout_height="match_parent"/>
 
                 <Button
-                    android:id="@+id/positive_next_button"
+                    android:id="@+id/negative_next_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Seguir"
@@ -113,5 +114,4 @@
 
         </LinearLayout>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
