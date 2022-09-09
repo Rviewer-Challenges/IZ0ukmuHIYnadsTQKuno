@@ -25,7 +25,7 @@ public class AddCareerActivity extends AppCompatActivity {
         setData();
         addBtn.setOnClickListener(view -> {
             if (jobTitle.getText().toString().isEmpty()){
-                Toast.makeText(getApplicationContext(), Generics.NOMBRE_EMPLEO_EXCEPCION, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), Generics.JOB_TITLE_EXCEPTION, Toast.LENGTH_SHORT).show();
             }else{
                 String titulo = jobTitle.getText().toString();
                 int studyYears = 0;

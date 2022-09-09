@@ -18,5 +18,5 @@ public class Generics {
     //AddCareerActivity
     public static final String WRONG_INPUT_MESSAGE = "Introduzca valores válidos para los años de experiencia";
     public static final String ADD_CAREER_MESSAGE = "Nos llevará a la pantalla para dejar las decisiones";
-    public static final String NOMBRE_EMPLEO_EXCEPCION = "El nombre del empleo no puede ser nulo";
+    public static final String JOB_TITLE_EXCEPTION = "El nombre del empleo no puede ser nulo";
 }
