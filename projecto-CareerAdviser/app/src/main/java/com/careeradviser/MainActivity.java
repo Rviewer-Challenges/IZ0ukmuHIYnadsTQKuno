@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         addCareerBtn = this.findViewById(R.id.addCareerBtn);
-        Intent i = new Intent(this, AddCareer.class);
+        Intent i = new Intent(this, AddCareerActivity.class);
         addCareerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

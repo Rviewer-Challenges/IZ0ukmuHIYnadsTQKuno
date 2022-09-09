@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class AddCareer extends AppCompatActivity {
+public class AddCareerActivity extends AppCompatActivity {
 
     public static final String NOMBRE_EMPLEO_EXCEPCION = "El nombre del empleo no puede ser nulo";
     FloatingActionButton backBtn, addBtn;

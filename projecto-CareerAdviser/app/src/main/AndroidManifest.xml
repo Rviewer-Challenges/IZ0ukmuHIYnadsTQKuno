@@ -17,7 +17,7 @@
             android:name=".PositiveDecisionActivity"
             android:exported="false" />
         <activity
-            android:name=".AddCareer"
+            android:name=".AddCareerActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
