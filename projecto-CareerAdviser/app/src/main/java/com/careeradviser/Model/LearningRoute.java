@@ -53,6 +53,10 @@ public class LearningRoute implements Serializable {
         this.negativeDecision.add(negativeDecision);
     }
 
+    public int getTotalYears(){
+        return getStudyingYears() + getWorkingYears();
+    }
+
     @Override
     public String toString() {
         return "LearningRoute{" +

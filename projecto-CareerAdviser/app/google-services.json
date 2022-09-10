@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "798570900014",
+    "firebase_url": "https://careeradviser-54831-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "careeradviser-54831",
+    "storage_bucket": "careeradviser-54831.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798570900014:android:45b453f1ebf1cb0fe00dbf",
+        "android_client_info": {
+          "package_name": "com.careeradviser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798570900014-80qla47gtrjbq04p84i5c1hfast9kdr8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHrJrM3QQl5OYcYtRI_E0WKSuCeywb_04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798570900014-80qla47gtrjbq04p84i5c1hfast9kdr8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
