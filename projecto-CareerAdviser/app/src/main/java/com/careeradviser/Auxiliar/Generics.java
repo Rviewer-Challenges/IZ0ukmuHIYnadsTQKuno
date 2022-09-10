@@ -17,7 +17,7 @@ public class Generics {
     public static final String NO_CONFIRMATION_MESSAGE = "CANCELAR";
     public static final String ABORTION_MESSAGE = "ABORTAR Y CANCELAR";
     public static final String NO_RESPONSE_MESSAGE = "Su progreso no ha sufrido cambios";
-    public static final String YES_RESPONSE_MESSAGE = "Su ruta de aprendizaje se ha añadido exitosamente";
+    public static final String YES_RESPONSE_MESSAGE = "Gracias por contribuir a una comunidad próspera, <3";
     public static final String ABORTION_RESPONSE_MESSAGE = "El proceso ha sido abortado con éxito";
     public static final String NEXT_MESSAGE = "Aporte al menos una decisión errónea para orientar a la comunidad";
     public static final String CLEAR_MESSAGE2 = "Pulse nuevamente para eliminar un registro anterior";

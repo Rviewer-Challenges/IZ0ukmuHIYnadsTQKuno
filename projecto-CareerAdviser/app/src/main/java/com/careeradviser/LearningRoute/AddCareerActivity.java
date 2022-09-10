@@ -49,7 +49,7 @@ public class AddCareerActivity extends AppCompatActivity {
                 }else{
                     //Cambiar de pantalla
                     lRoute = createLearningRoute(job, studyingYears, workingYears);
-                    Intent iLearningRouteActivity = new Intent(this, LearningRouteActivity.class);
+                    Intent iLearningRouteActivity = new Intent(AddCareerActivity.this, LearningRouteActivity.class);
                     iLearningRouteActivity.putExtra(ID_LEARNING_ROUTE, lRoute);
                     startActivity(iLearningRouteActivity);
                 }
@@ -57,12 +57,7 @@ public class AddCareerActivity extends AppCompatActivity {
         });
 
         Intent iMainActivity = new Intent(this, MainActivity.class);
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(iMainActivity);
-            }
-        });
+        backBtn.setOnClickListener(view -> startActivity(iMainActivity));
     }
 
     private LearningRoute createLearningRoute(String job, int studyingYears, int workingYears) {

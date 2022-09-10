@@ -14,10 +14,13 @@
         android:theme="@style/Theme.CareerAdviser"
         tools:targetApi="31">
         <activity
-            android:name=".NegativeDecisionActivity"
+            android:name=".LearningRoute.NegativeDecisionActivity"
             android:exported="false" />
         <activity
-            android:name=".PositiveDecisionActivity"
+            android:name=".LearningRoute.LearningRouteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LearningRoute.PositiveDecisionActivity"
             android:exported="false" />
         <activity
             android:name=".LearningRoute.AddCareerActivity"

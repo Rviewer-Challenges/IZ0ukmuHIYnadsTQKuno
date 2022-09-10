@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class LearningRoute implements Serializable {
-    private String job;
+    private String job, explanation;
     private int studyingYears, workingYears;
     private ArrayList<String> positiveDecision;
     private ArrayList<String> negativeDecision;
@@ -29,6 +29,14 @@ public class LearningRoute implements Serializable {
         return workingYears;
     }
 
+    public String getExplanation() {
+        return explanation;
+    }
+
+    public void setExplanation(String explanation) {
+        this.explanation = explanation;
+    }
+
     public int getPositiveDecisions(){
         return positiveDecision.size();
     }
@@ -43,5 +51,17 @@ public class LearningRoute implements Serializable {
 
     public void addNegativeDecision(String negativeDecision){
         this.negativeDecision.add(negativeDecision);
+    }
+
+    @Override
+    public String toString() {
+        return "LearningRoute{" +
+                "job='" + job + '\'' +
+                ", explanation='" + explanation + '\'' +
+                ", studyingYears=" + studyingYears +
+                ", workingYears=" + workingYears +
+                ", positiveDecision=" + positiveDecision +
+                ", negativeDecision=" + negativeDecision +
+                '}';
     }
 }
