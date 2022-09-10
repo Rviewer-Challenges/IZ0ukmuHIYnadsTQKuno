@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,9 +14,13 @@ import com.careeradviser.LearningRoute.AddCareerActivity;
 import com.careeradviser.LearningRoute.LearningRouteAdapter;
 import com.careeradviser.Model.LearningRoute;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,11 +54,22 @@ public class MainActivity extends AppCompatActivity {
                 lRoute.addPositiveDecision("s");
                 lRoute.addNegativeDecision("s");
 
-                final DatabaseReference mDatabase;
-                mDatabase = FirebaseDatabase.getInstance("https://careeradviser-54831-default-rtdb.europe-west1.firebasedatabase.app/").getReference();
+                Map<String, Object> map = new HashMap<>();
+                map.put("Hola", "Hola mundo");
 
-                mDatabase.push().setValue("asd");
-                Toast.makeText(MainActivity.this, "Hizo algo", Toast.LENGTH_SHORT).show();
+                FirebaseDatabase database = FirebaseDatabase.getInstance("https://careeradviser-project-default-rtdb.europe-west1.firebasedatabase.app/");
+                database.getReference("message").child("upload").push().setValue(map)
+                                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void unused) {
+                                        Toast.makeText(MainActivity.this, "Hizo algo", Toast.LENGTH_SHORT).show();
+                                    }
+                                }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(MainActivity.this, "Hizo algo", Toast.LENGTH_SHORT).show();
+                            }
+                        });
             }
         });
     }
