@@ -2,8 +2,6 @@ package com.careeradviser.LearningRoute;
 
 import static com.careeradviser.Auxiliar.Generics.ID_LEARNING_ROUTE;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.careeradviser.Auxiliar.Generics;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.careeradviser.Model.LearningRoute;
 import com.careeradviser.R;
 

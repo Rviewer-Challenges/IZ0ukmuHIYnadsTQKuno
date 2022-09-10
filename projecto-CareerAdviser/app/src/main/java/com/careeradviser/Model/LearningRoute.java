@@ -9,6 +9,11 @@ public class LearningRoute implements Serializable {
     private ArrayList<String> positiveDecision;
     private ArrayList<String> negativeDecision;
 
+    public LearningRoute(){
+        this.positiveDecision = new ArrayList<>();
+        this.negativeDecision = new ArrayList<>();
+    }
+
     public LearningRoute(String job, int studyingYears, int workingYears){
         this.job = job;
         this.studyingYears = studyingYears;

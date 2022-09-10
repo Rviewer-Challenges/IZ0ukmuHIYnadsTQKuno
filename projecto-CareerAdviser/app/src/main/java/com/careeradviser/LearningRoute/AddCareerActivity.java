@@ -6,7 +6,6 @@ import static com.careeradviser.Auxiliar.Generics.parseString;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -38,10 +37,10 @@ public class AddCareerActivity extends AppCompatActivity {
                 String job = parseString(jobTitle);
                 int studyingYears = 0;
                 int workingYears = 0;
-                if (!isEmpty(parseString(workYearsEt)) || parseString(studyYearsEt).equals("0")){
+                if (!isEmpty(parseString(studyYearsEt)) || parseString(studyYearsEt).equals("0")){
                     studyingYears = Integer.parseInt(parseString(studyYearsEt));
                 }
-                if (!isEmpty(parseString(studyYearsEt)) || parseString(workYearsEt).equals("0")){
+                if (!isEmpty(parseString(workYearsEt)) || parseString(workYearsEt).equals("0")){
                     workingYears = Integer.parseInt(parseString(workYearsEt));
                 }
                 if (workingYears<0 || studyingYears<0){

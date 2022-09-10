@@ -4,16 +4,19 @@ import static com.careeradviser.Auxiliar.Generics.ID_LEARNING_ROUTE;
 import static com.careeradviser.Auxiliar.Generics.clearET;
 import static com.careeradviser.Auxiliar.Generics.isEmpty;
 import static com.careeradviser.Auxiliar.Generics.parseString;
+import static com.careeradviser.DDBB.DatabaseConnectionAux.DBReference;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.careeradviser.Auxiliar.Generics;
 import com.careeradviser.MainActivity;
@@ -103,6 +106,8 @@ public class NegativeDecisionActivity extends AppCompatActivity {
 
     private void saveRoute() {
         //Guardar el objeto dentro de la BBDD
+        Log.e("Learning route", lRoute.toString());
+        DBReference.push().setValue(lRoute);
         startActivity(new Intent(NegativeDecisionActivity.this, MainActivity.class));
     }
 
