@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "689068626128",
+    "project_id": "careeradviserhackaton-633f3",
+    "storage_bucket": "careeradviserhackaton-633f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689068626128:android:529968d5b1db1595c10ed5",
+        "android_client_info": {
+          "package_name": "com.careeradviser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689068626128-64gdhgu7bald4alfdecv6ihe84tjdmtf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPup9DaIFj0XDmhYD6qcIcSIjg5IPGeyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689068626128-64gdhgu7bald4alfdecv6ihe84tjdmtf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

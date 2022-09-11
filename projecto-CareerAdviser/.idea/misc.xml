@@ -14,9 +14,11 @@
         <entry key="..\:/Users/imorales/AndroidStudioProjects/CareerAdviser/app/src/main/res/layout/activity_add_career.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/imorales/AndroidStudioProjects/CareerAdviser/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/ivanm/Desktop/2DAM/PMDMO/ProyectosAndroid/CareerAdviser/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/img_bg.xml" value="0.208" />
         <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/input_base.xml" value="0.271" />
         <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/item_bg.xml" value="0.3115" />
         <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/modified_rounded_file.xml" value="0.271" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/product_tour_bg.xml" value="0.2715" />
         <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/rounded_file.xml" value="0.271" />
         <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_add_career.xml" value="0.3625" />
         <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_learning_route.xml" value="0.30833333333333335" />
@@ -24,7 +26,12 @@
         <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_negative_decision.xml" value="0.3625" />
         <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_positive_decision.xml" value="0.3484375" />
         <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_positive_thoughts.xml" value="0.3625" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_product_tour_fourth.xml" value="0.3484375" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_product_tour_main.xml" value="0.3625" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_product_tour_second.xml" value="0.3625" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_product_tour_third.xml" value="0.3625" />
         <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/learning_route_item.xml" value="0.271875" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/xml/network_security_config.xml" value="0.18541666666666667" />
       </map>
     </option>
   </component>

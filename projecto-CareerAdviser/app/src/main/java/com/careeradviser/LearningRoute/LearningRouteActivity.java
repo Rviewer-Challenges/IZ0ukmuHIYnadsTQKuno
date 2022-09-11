@@ -5,6 +5,7 @@ import static com.careeradviser.Auxiliar.Generics.ID_LEARNING_ROUTE;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -23,6 +24,7 @@ public class LearningRouteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_learning_route);
 
         lRoute = (LearningRoute) getIntent().getSerializableExtra(ID_LEARNING_ROUTE);

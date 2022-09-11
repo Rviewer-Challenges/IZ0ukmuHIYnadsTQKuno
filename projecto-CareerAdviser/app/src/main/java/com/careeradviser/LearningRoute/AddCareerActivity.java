@@ -6,6 +6,7 @@ import static com.careeradviser.Auxiliar.Generics.parseString;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -27,6 +28,7 @@ public class AddCareerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_add_career);
 
         setData();

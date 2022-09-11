@@ -2,8 +2,9 @@ package com.careeradviser;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
+import android.view.Window;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,7 +18,8 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,7 +33,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
+
 
         FirebaseRecyclerOptions<LearningRoute> options =
                 new FirebaseRecyclerOptions.Builder<LearningRoute>()
@@ -39,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                         .build();
 
         learningRouteAdapter = new LearningRouteAdapter(options);
-
+        Log.e("Options", options.getSnapshots().toString());
         rv = findViewById(R.id.rv_learning_route);
         rv.setAdapter(learningRouteAdapter);
 
@@ -49,25 +53,47 @@ public class MainActivity extends AppCompatActivity {
         addCareerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                LearningRoute lRoute = new LearningRoute("asd", 0, 0);
-                lRoute.setExplanation("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-                lRoute.addPositiveDecision("s");
-                lRoute.addNegativeDecision("s");
+                FirebaseFirestore db = FirebaseFirestore.getInstance();
+                Map<String, Object> user = new HashMap<>();
+                user.put("first", "Ada");
+                user.put("last", "Lovelace");
+                user.put("born", 1815);
 
-                Map<String, Object> map = new HashMap<>();
-                map.put("Hola", "Hola mundo");
-
-                FirebaseDatabase database = FirebaseDatabase.getInstance("https://careeradviser-project-default-rtdb.europe-west1.firebasedatabase.app/");
-                database.getReference("message").child("upload").push().setValue(map)
-                                .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                    @Override
-                                    public void onSuccess(Void unused) {
-                                        Toast.makeText(MainActivity.this, "Hizo algo", Toast.LENGTH_SHORT).show();
-                                    }
-                                }).addOnFailureListener(new OnFailureListener() {
+// Add a new document with a generated ID
+                db.collection("users")
+                        .add(user)
+                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                            @Override
+                            public void onSuccess(DocumentReference documentReference) {
+                                Log.d("asd", "DocumentSnapshot added with ID: " + documentReference.getId());
+                            }
+                        })
+                        .addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(MainActivity.this, "Hizo algo", Toast.LENGTH_SHORT).show();
+                                Log.w("asd", "Error adding document", e);
+                            }
+                        });
+
+                Map<String, Object> user2 = new HashMap<>();
+                user.put("first", "Alan");
+                user.put("middle", "Mathison");
+                user.put("last", "Turing");
+                user.put("born", 1912);
+
+// Add a new document with a generated ID
+                db.collection("users")
+                        .add(user2)
+                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                            @Override
+                            public void onSuccess(DocumentReference documentReference) {
+                                Log.d("zs", "DocumentSnapshot added with ID: " + documentReference.getId());
+                            }
+                        })
+                        .addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Log.w("zsd", "Error adding document", e);
                             }
                         });
             }

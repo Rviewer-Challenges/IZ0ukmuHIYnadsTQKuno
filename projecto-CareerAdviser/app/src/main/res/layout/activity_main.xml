@@ -16,7 +16,7 @@
         android:gravity="center"
         android:text="Career Adviser"
         android:textAlignment="center"
-        android:textColor="#F2E2BA"
+        android:textColor="#E6C779"
         android:textSize="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -35,7 +35,8 @@
             android:id="@+id/rv_learning_route"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginVertical="20dp"/>
+            android:layout_marginVertical="20dp"
+            android:visibility="invisible"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/addCareerBtn"
