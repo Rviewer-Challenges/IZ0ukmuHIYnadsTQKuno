@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".LearningRoute.ViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/view_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:padding="20dp"
+            android:background="@drawable/rounded_file"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_file"
+            android:padding="15dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="50dp">
+
+            <TextView
+                android:id="@+id/tip_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:background="@drawable/input_base"
+                android:textSize="12dp"
+                android:padding="10dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tip_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:background="@drawable/input_base"
+                android:textSize="12dp"
+                android:padding="10dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tip_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:background="@drawable/input_base"
+                android:textSize="12dp"
+                android:padding="10dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:gravity="center"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/item_back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="volver"/>
+
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/item_reverse_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Errores"
+                    android:backgroundTint="#009688"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

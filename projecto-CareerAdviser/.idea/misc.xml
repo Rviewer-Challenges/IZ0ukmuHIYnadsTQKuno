@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/imorales/AndroidStudioProjects/CareerAdviser/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.133" />
+        <entry key="..\:/Users/imorales/AndroidStudioProjects/CareerAdviser/app/src/main/res/drawable/career_card.xml" value="0.2215" />
+        <entry key="..\:/Users/imorales/AndroidStudioProjects/CareerAdviser/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.2555" />
+        <entry key="..\:/Users/imorales/AndroidStudioProjects/CareerAdviser/app/src/main/res/drawable/ic_graduation_background.xml" value="0.2555" />
+        <entry key="..\:/Users/imorales/AndroidStudioProjects/CareerAdviser/app/src/main/res/drawable/ic_launcher_background.xml" value="0.133" />
+        <entry key="..\:/Users/imorales/AndroidStudioProjects/CareerAdviser/app/src/main/res/drawable/ic_next.xml" value="0.2215" />
+        <entry key="..\:/Users/imorales/AndroidStudioProjects/CareerAdviser/app/src/main/res/drawable/input_base.xml" value="0.2215" />
+        <entry key="..\:/Users/imorales/AndroidStudioProjects/CareerAdviser/app/src/main/res/drawable/rounded_file.xml" value="0.2555" />
+        <entry key="..\:/Users/imorales/AndroidStudioProjects/CareerAdviser/app/src/main/res/layout/activity_add_career.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/imorales/AndroidStudioProjects/CareerAdviser/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/ivanm/Desktop/2DAM/PMDMO/ProyectosAndroid/CareerAdviser/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/ic_product_tour_bg_background.xml" value="0.105" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/ic_splash_screen_background.xml" value="0.105" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/icon_splash_screen.xml" value="0.236" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/img_bg.xml" value="0.208" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/input_base.xml" value="0.271" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/item_bg.xml" value="0.3115" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/logo_splashscreen_background.xml" value="0.3025" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/modified_rounded_file.xml" value="0.271" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/product_tour_bg.xml" value="0.2715" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/drawable/rounded_file.xml" value="0.271" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_add_career.xml" value="0.3625" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_learning_route.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_negative_decision.xml" value="0.3625" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_positive_decision.xml" value="0.3484375" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_positive_thoughts.xml" value="0.3625" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_product_tour_fourth.xml" value="0.3484375" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_product_tour_main.xml" value="0.3625" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_product_tour_second.xml" value="0.3625" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_product_tour_third.xml" value="0.3625" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_splash.xml" value="0.3625" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_splash_screen.xml" value="0.3625" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/activity_view.xml" value="0.3484375" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/layout/learning_route_item.xml" value="0.271875" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/mipmap-anydpi-v26/ic_icono_app.xml" value="0.2795" />
+        <entry key="..\:/Users/ivanm/Desktop/hackaton/IZ0ukmuHIYnadsTQKuno/projecto-CareerAdviser/app/src/main/res/xml/network_security_config.xml" value="0.18541666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
