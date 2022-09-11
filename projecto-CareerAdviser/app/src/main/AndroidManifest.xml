@@ -17,6 +17,9 @@
         android:theme="@style/Theme.CareerAdviser"
         tools:targetApi="31">
         <activity
+            android:name=".LearningRoute.ViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen.SplashScreenActivity"
             android:exported="true">
             <intent-filter>

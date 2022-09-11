@@ -1,6 +1,5 @@
 package com.careeradviser.LearningRoute;
 
-import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,62 +10,56 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.careeradviser.Auxiliar.Generics;
 import com.careeradviser.Model.LearningRoute;
 import com.careeradviser.R;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
 
-public class LearningRouteAdapter extends FirebaseRecyclerAdapter<LearningRoute, LearningRouteAdapter.myViewHolder> {
+import java.util.ArrayList;
 
+public class LearningRouteAdapter extends RecyclerView.Adapter<LearningRouteAdapter.myViewHolder> {
 
-    /**
-     * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
-     * {@link FirebaseRecyclerOptions} for configuration options.
-     *
-     * @param options
-     */
-    public LearningRouteAdapter(@NonNull FirebaseRecyclerOptions<LearningRoute> options) {
-        super(options);
+    private ArrayList<LearningRoute> array;
+
+    public LearningRouteAdapter(ArrayList<LearningRoute> learningRoutes){
+        this.array = learningRoutes;
     }
 
     @NonNull
     @Override
     public myViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.learning_route_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.learning_route_item, null, false);
         return new myViewHolder(view);
     }
 
     @Override
-    public int getItemCount() {
-        return 0;
-    }
-
-    @Override
-    protected void onBindViewHolder(@NonNull myViewHolder holder, int position, @NonNull LearningRoute model) {
-        holder.jobTitle.setText(model.getJob());
-        holder.process.setText(model.getTotalYears());
-        holder.description.setText(model.getExplanation());
+    public void onBindViewHolder(@NonNull myViewHolder holder, final int position) {
+        holder.tvJob.setText("Cargo: " + array.get(position).getJob());
+        holder.tvTotalYears.setText("Duración del proceso: " + String.valueOf( array.get(position).getStudyingYears() + array.get(position).getWorkingYears() ) );
         holder.goButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Crear activity de vista de Learning Routes View Activity
-                holder.ctx.startActivity(new Intent(holder.ctx, AddCareerActivity.class));
+                Intent viewActivity = new Intent(holder.goButton.getContext(), ViewActivity.class);
+                viewActivity.putExtra(Generics.ID_LEARNING_ROUTE, array.get(position));
+                holder.goButton.getContext().startActivity(viewActivity);
             }
         });
     }
 
-    public class myViewHolder extends RecyclerView.ViewHolder{
-        Context ctx;
-        TextView jobTitle, description, process;
-        Button goButton;
-        public myViewHolder(@NonNull View itemView) {
-            super(itemView);
+    @Override
+    public int getItemCount() {
+        return array.size();
+    }
 
-            ctx = itemView.getContext();
-            jobTitle = itemView.findViewById(R.id.item_view_job_title);
-            description = itemView.findViewById(R.id.item_view_description);
-            process = itemView.findViewById(R.id.item_view_process_years);
-            goButton = itemView.findViewById(R.id.item_view_button);
+    public class myViewHolder extends RecyclerView.ViewHolder {
+        private TextView tvJob, tvTotalYears;
+        private Button goButton;
+
+        public myViewHolder(@NonNull View view){
+            super(view);
+
+            tvJob = view.findViewById(R.id.item_view_job_title);
+            tvTotalYears = view.findViewById(R.id.item_view_process_years);
+            goButton = view.findViewById(R.id.item_view_button);
         }
     }
 }
