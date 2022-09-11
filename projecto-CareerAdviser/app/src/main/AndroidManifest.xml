@@ -17,16 +17,25 @@
         android:theme="@style/Theme.CareerAdviser"
         tools:targetApi="31">
         <activity
-            android:name=".ProductTourFourthActivity"
+            android:name=".SplashScreen.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProductTour.ProductTourFourthActivity"
             android:exported="false" />
         <activity
-            android:name=".ProductTourThirdActivity"
+            android:name=".ProductTour.ProductTourThirdActivity"
             android:exported="false" />
         <activity
-            android:name=".ProductTourSecondActivity"
+            android:name=".ProductTour.ProductTourSecondActivity"
             android:exported="false" />
         <activity
-            android:name=".ProductTourMainActivity"
+            android:name=".ProductTour.ProductTourMainActivity"
             android:exported="false" />
         <activity
             android:name=".LearningRoute.NegativeDecisionActivity"
@@ -42,13 +51,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

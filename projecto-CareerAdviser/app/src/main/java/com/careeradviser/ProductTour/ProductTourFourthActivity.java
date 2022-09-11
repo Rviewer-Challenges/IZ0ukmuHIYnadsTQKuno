@@ -19,7 +19,7 @@ public class ProductTourFourthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_tour_fourth);
 
-        goNextButton = findViewById(R.id.product_tour_3_btn);
+        goNextButton = findViewById(R.id.product_tour_4_btn);
         goNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
