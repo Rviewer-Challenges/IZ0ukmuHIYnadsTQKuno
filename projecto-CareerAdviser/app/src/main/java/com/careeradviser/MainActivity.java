@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         if (as.size()<=0){
-            LearningRoute l = new LearningRoute("Developer", 2, 2);
+            LearningRoute l = new LearningRoute("Junior Developer", 2, 1);
 
-            l.setExplanation("Me encargo de crear y mantener diferentes aplicaciones web y movil");
+            l.setExplanation("Me encargo de crear y mantener diferentes aplicaciones web y movil desde hace aproximadamente 1 año");
             l.addNegativeDecision("No dedicar el tiempo suficiente a las tecnologías más complejas");
             l.addPositiveDecision("Ser proactivo y preguntar siempre que haya dudas");
             as.add(l);
